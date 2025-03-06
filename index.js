@@ -28,7 +28,7 @@ var src_default = {
       });
     }
 
-    if (token !== SECRET.key_a && key !== SECRET.key_a) {
+    if (token !== env.auth && key !== env.auth) {
       return new Response(JSON.stringify({ message: "Unauthenticated access" }), {
         headers: corsHeaders
       });
