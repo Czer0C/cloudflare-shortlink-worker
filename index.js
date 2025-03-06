@@ -28,7 +28,7 @@ var src_default = {
       });
     }
 
-    if (token !== 'zenzeIsMoe' && key !== 'zenzeIsMoe') {
+    if (token !== SECRET.key_a && key !== SECRET.key_a) {
       return new Response(JSON.stringify({ message: "Unauthenticated access" }), {
         headers: corsHeaders
       });
